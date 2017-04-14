@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "83"
             endingLineNumber = "83"
-            landmarkName = "hasValueForKey(keyName:withAccessibility:)"
+            landmarkName = "hasValue(forKey:withAccessibility:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -31,24 +31,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "119"
             endingLineNumber = "119"
-            landmarkName = "accessibilityOfKey(keyName:)"
+            landmarkName = "integer(forKey:withAccessibility:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pods/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainWrapper.swift"
-            timestampString = "513896760.639298"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
-            landmarkName = "setDouble(value:forKey:withAccessibility:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftKeychainWrapper.KeychainWrapper.integer (forKey : Swift.String, withAccessibility : Swift.Optional&lt;SwiftKeychainWrapper.KeychainItemAccessibility&gt;) -&gt; Swift.Optional&lt;Swift.Int&gt;"
+                  moduleName = "SwiftKeychainWrapper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Mac%20Files/Xcode%20Projects/Social%20Mayhem/Pods/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainWrapper.swift"
+                  timestampString = "513900617.662755"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftKeychainWrapper.KeychainWrapper.(integer (forKey : Swift.String, withAccessibility : Swift.Optional&lt;SwiftKeychainWrapper.KeychainItemAccessibility&gt;) -&gt; Swift.Optional&lt;Swift.Int&gt;).(default argument 1)"
+                  moduleName = "SwiftKeychainWrapper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Mac%20Files/Xcode%20Projects/Social%20Mayhem/Pods/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainWrapper.swift"
+                  timestampString = "513900617.664376"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

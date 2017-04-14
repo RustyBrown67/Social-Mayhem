@@ -19,7 +19,13 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
     }
 
     @IBAction func facebookBtnTapped(_ sender: UIButton) {
@@ -54,12 +60,18 @@ class SignInVC: UIViewController {
                 if error == nil {
                     //signed in without problem
                     print("User authenticated with Firebase via email and pasword")
+                    if let user = user {
+                        self.completeSignIn(id: user.uid)
+                    }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
-                            print("Authentication with Firebase and create new user successful")
-                        } else {
                             print("Unable to authenticate Firebase with email")
+                        } else {
+                            print("Authentication with Firebase and create new user successful")
+                            if let user = user {
+                                self.completeSignIn(id: user.uid)
+                            }
                         }
                     })
                 }
@@ -72,8 +84,16 @@ class SignInVC: UIViewController {
                 print("Unable to authenticate with Firebase - \(error!)")
             } else {
                 print("Successfully authenticated with Firebase")
+                if let user = user {
+                   self.completeSignIn(id: user.uid)
+                }
             }
         })
+    }
+    
+    func completeSignIn(id: String) {
+        KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        performSegue(withIdentifier: "goToFeed", sender: nil)
     }
 
 }

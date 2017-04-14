@@ -11,6 +11,6 @@ target 'Social Mayhem' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
-  pod 'SwiftKeychainWrapper'
+  pod 'SwiftKeychainWrapper', :git => 'https://github.com/jrendel/SwiftKeychainWrapper.git', :branch => 'master'
 
 end
