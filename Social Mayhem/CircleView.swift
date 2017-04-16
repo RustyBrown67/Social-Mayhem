@@ -1,14 +1,14 @@
 //
-//  CustomView.swift
+//  CircleView.swift
 //  Social Mayhem
 //
-//  Created by Russell Brown on 14/04/2017.
+//  Created by Russell Brown on 15/04/2017.
 //  Copyright © 2017 Russell Brown. All rights reserved.
 //
 
 import UIKit
 
-class CustomView: UIView {
+class CircleView: UIImageView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,8 +17,14 @@ class CustomView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        layer.cornerRadius = 4.0
         
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layer.cornerRadius = self.frame.width / 2
+        
+    }
+
 
 }

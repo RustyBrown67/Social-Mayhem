@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185820BB1EA2652A0023D7F7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185820BA1EA2652A0023D7F7 /* CircleView.swift */; };
+		185820BD1EA3A3D20023D7F7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185820BC1EA3A3D20023D7F7 /* PostCell.swift */; };
+		185820C01EA3B86F0023D7F7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185820BF1EA3B86F0023D7F7 /* DataService.swift */; };
 		1864AEAF1EA0294C001B9389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1864AEAE1EA0294C001B9389 /* AppDelegate.swift */; };
 		1864AEB11EA0294C001B9389 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1864AEB01EA0294C001B9389 /* SignInVC.swift */; };
 		1864AEB41EA0294C001B9389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1864AEB21EA0294C001B9389 /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185820BA1EA2652A0023D7F7 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		185820BC1EA3A3D20023D7F7 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		185820BF1EA3B86F0023D7F7 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1864AEAB1EA0294C001B9389 /* Social Mayhem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Mayhem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1864AEAE1EA0294C001B9389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1864AEB01EA0294C001B9389 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -58,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185820BE1EA3B8530023D7F7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				185820BF1EA3B86F0023D7F7 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		1864AEA21EA0294C001B9389 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +93,7 @@
 		1864AEAD1EA0294C001B9389 /* Social Mayhem */ = {
 			isa = PBXGroup;
 			children = (
+				185820BE1EA3B8530023D7F7 /* Services */,
 				1864AED21EA172C3001B9389 /* Social Mayhem.entitlements */,
 				1864AEC71EA10B5E001B9389 /* Util */,
 				1864AEC41EA02CE8001B9389 /* Controller */,
@@ -108,6 +123,8 @@
 				1864AECA1EA10D46001B9389 /* RoundButton.swift */,
 				1864AECC1EA10ECE001B9389 /* CustomField.swift */,
 				1864AECE1EA10FFC001B9389 /* RoundedCorner.swift */,
+				185820BA1EA2652A0023D7F7 /* CircleView.swift */,
+				185820BC1EA3A3D20023D7F7 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -277,14 +294,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185820BB1EA2652A0023D7F7 /* CircleView.swift in Sources */,
 				1864AEC61EA10ABD001B9389 /* CustomView.swift in Sources */,
 				1864AECB1EA10D46001B9389 /* RoundButton.swift in Sources */,
 				1864AEB11EA0294C001B9389 /* SignInVC.swift in Sources */,
 				1864AECD1EA10ECE001B9389 /* CustomField.swift in Sources */,
+				185820C01EA3B86F0023D7F7 /* DataService.swift in Sources */,
 				1864AED41EA17BE8001B9389 /* FeedVC.swift in Sources */,
 				1864AEAF1EA0294C001B9389 /* AppDelegate.swift in Sources */,
 				1864AEC91EA10B70001B9389 /* Constants.swift in Sources */,
 				1864AECF1EA10FFC001B9389 /* RoundedCorner.swift in Sources */,
+				185820BD1EA3A3D20023D7F7 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
