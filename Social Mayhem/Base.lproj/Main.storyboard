@@ -250,7 +250,7 @@
                                                                 <constraint firstAttribute="height" constant="60" id="xhU-sA-kWp"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="DCE-4u-WBU" customClass="CircleView" customModule="Social_Mayhem" customModuleProvider="target">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="DCE-4u-WBU">
                                                             <rect key="frame" x="275" y="8" width="60" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="0gl-Dq-keY"/>
@@ -329,6 +329,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="aj0-mC-cBa" id="idU-S4-7Sb"/>
+                                            <outlet property="likeImg" destination="DCE-4u-WBU" id="rkm-vV-cQY"/>
                                             <outlet property="likesLbl" destination="cmk-hK-1QJ" id="61C-dY-cxR"/>
                                             <outlet property="postImg" destination="dqq-YJ-unE" id="zbT-7u-Xol"/>
                                             <outlet property="profileImg" destination="ory-Uo-Sk2" id="EUn-RG-ytE"/>
